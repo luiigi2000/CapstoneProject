@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="eventInfo" format=3 uid="uid://dqr205oaopbch"]
+
+[ext_resource type="Script" uid="uid://cb4hxqx27r7o3" path="res://eventInfo.gd" id="1_w0pm4"]
+
+[resource]
+script = ExtResource("1_w0pm4")
+event = "Make a change to your borders"
+available_choices = ["Close", "Open"]
+metadata/_custom_type_script = "uid://cb4hxqx27r7o3"
