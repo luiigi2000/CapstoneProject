@@ -9,7 +9,12 @@ func _ready() -> void:
 	Autoload.energy = 1300
 	Autoload.housing = 1300
 	Autoload.update_stats()
-	print(Autoload.pop_state)
+	
+	var event = preload("res://Events/event1.tres")
+	print(event.event)
+	for i in event.available_choices:
+		print(i)
+	print("Changed" + str(event.effects))
 
 	
 	
