@@ -1,20 +1,32 @@
 extends Node
 
+var population: float
+var population_rate: float
+var energy: float
+var housing: float
+var farmland: float
+var food: float
+var water: float
+var qol: float
+var capacity: float
+enum pop_state_enum{UNDER,STABLE,OVER}
+var pop_state: float
+var population_load: float
 
 
-var OVER_POPULATION = 10
+func update_stats():
+	capacity = min(food, water, housing, energy)
+	population_load = (population/capacity) * 100
+	if population_load > 100:
+		pop_state = pop_state_enum.OVER
+	elif population_load < 59:
+		pop_state = pop_state_enum.UNDER
+	else:
+		pop_state = pop_state_enum.STABLE
+		
+		
+		
 
-var house_max := 100
-const population = "population"
-
-
-var STATS = {
-	"wealth": 0,
-	"population": 0,
-	"crime": 0,
-}
-
-var RATES = {
-	"population": 1,
-	"crime": 0
-}
+		
+	
+	

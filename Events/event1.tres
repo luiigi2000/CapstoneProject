@@ -5,5 +5,6 @@
 [resource]
 script = ExtResource("1_w0pm4")
 event = "Make a change to your borders"
-available_choices = ["Close", "Open"]
+available_choices = ["Close Borders", "Keep them open"]
+effects = ["crime", "poverty"]
 metadata/_custom_type_script = "uid://cb4hxqx27r7o3"
