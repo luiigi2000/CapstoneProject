@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dcorg7hmw1pc2"]
+
+[ext_resource type="Script" uid="uid://dq0a4qwrrbpfd" path="res://Scripts/event_node.gd" id="1_317d6"]
+[ext_resource type="Texture2D" uid="uid://bs5ui0x7c51qr" path="res://Assets/eventbutton.png" id="1_ilfr7"]
+
+[node name="EventNode" type="Node2D" unique_id=2089672842]
+script = ExtResource("1_317d6")
+
+[node name="Button" type="Button" parent="." unique_id=1152968701]
+offset_left = 382.0
+offset_top = 181.0
+offset_right = 518.0
+offset_bottom = 317.0
+scale = Vector2(0.5, 0.5)
+icon = ExtResource("1_ilfr7")
+flat = true

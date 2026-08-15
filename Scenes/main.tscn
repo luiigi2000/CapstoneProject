@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cwxk2vvci3ln7"]
+
+[ext_resource type="Script" uid="uid://beukst18kayiq" path="res://Scripts/main.gd" id="1_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://dcorg7hmw1pc2" path="res://Scenes/event_node.tscn" id="2_8gbba"]
+[ext_resource type="Texture2D" uid="uid://cektttp0pocf8" path="res://Assets/cap.png" id="2_jjvhh"]
+
+[node name="Main" type="Node2D" unique_id=1238014613]
+script = ExtResource("1_bo1nx")
+
+[node name="Cap" type="Sprite2D" parent="." unique_id=117592661]
+position = Vector2(575, 318)
+scale = Vector2(1.148, 1.0838926)
+texture = ExtResource("2_jjvhh")
+
+[node name="EventNode" parent="." unique_id=2089672842 instance=ExtResource("2_8gbba")]
+position = Vector2(247, 235)
+
+[node name="EventNode2" parent="." unique_id=2103618726 instance=ExtResource("2_8gbba")]
+position = Vector2(543, 251)
