@@ -1,12 +1,16 @@
 [gd_scene format=3 uid="uid://cwxk2vvci3ln7"]
 
-[ext_resource type="Script" uid="uid://beukst18kayiq" path="res://Scripts/main.gd" id="1_bo1nx"]
 [ext_resource type="PackedScene" uid="uid://dcorg7hmw1pc2" path="res://Scenes/event_node.tscn" id="2_8gbba"]
 [ext_resource type="Texture2D" uid="uid://cektttp0pocf8" path="res://Assets/cap.png" id="2_jjvhh"]
 [ext_resource type="PackedScene" uid="uid://d20u6bx30okfj" path="res://Scenes/stats_menu.tscn" id="4_jjvhh"]
 
+[sub_resource type="GDScript" id="GDScript_8gbba"]
+script/source = "extends Node2D
+
+"
+
 [node name="Main" type="Node2D" unique_id=1238014613]
-script = ExtResource("1_bo1nx")
+script = SubResource("GDScript_8gbba")
 
 [node name="Cap" type="Sprite2D" parent="." unique_id=117592661]
 position = Vector2(575, 318)
@@ -20,7 +24,7 @@ position = Vector2(247, 235)
 position = Vector2(543, 251)
 
 [node name="StatsMenu" parent="." unique_id=1635253876 instance=ExtResource("4_jjvhh")]
-offset_left = 762.0
-offset_top = -9.0
-offset_right = 762.0
-offset_bottom = -9.0
+offset_left = 779.0
+offset_top = -10.0
+offset_right = 779.0
+offset_bottom = -10.0
