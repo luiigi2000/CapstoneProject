@@ -20,3 +20,7 @@ position = Vector2(247, 235)
 position = Vector2(543, 251)
 
 [node name="StatsMenu" parent="." unique_id=1635253876 instance=ExtResource("4_jjvhh")]
+offset_left = 762.0
+offset_top = -9.0
+offset_right = 762.0
+offset_bottom = -9.0

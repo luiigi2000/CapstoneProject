@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="eventInfo" format=3 uid="uid://vu3dnjh8y1ha"]
+
+[ext_resource type="Script" uid="uid://cb4hxqx27r7o3" path="res://Scripts/eventInfo.gd" id="1_gdmgn"]
+
+[resource]
+script = ExtResource("1_gdmgn")
+event = "Increase farmland"
+available_choices = ["yeah", "nah"]
+metadata/_custom_type_script = "uid://cb4hxqx27r7o3"
