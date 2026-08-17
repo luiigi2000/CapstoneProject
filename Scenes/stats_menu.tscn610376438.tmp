@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://d20u6bx30okfj"]
+
+[ext_resource type="Script" uid="uid://cbbpwep1wb075" path="res://Scripts/stats_menu.gd" id="1_ygp7r"]
+
+[node name="StatsMenu" type="Control" unique_id=1635253876]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ygp7r")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1324356004]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MenuButton" type="MenuButton" parent="." unique_id=1340258713]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "MENU"
+
+[connection signal="about_to_popup" from="MenuButton" to="." method="_on_menu_button_about_to_popup"]

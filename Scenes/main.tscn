@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://beukst18kayiq" path="res://Scripts/main.gd" id="1_bo1nx"]
 [ext_resource type="PackedScene" uid="uid://dcorg7hmw1pc2" path="res://Scenes/event_node.tscn" id="2_8gbba"]
 [ext_resource type="Texture2D" uid="uid://cektttp0pocf8" path="res://Assets/cap.png" id="2_jjvhh"]
+[ext_resource type="PackedScene" uid="uid://d20u6bx30okfj" path="res://Scenes/stats_menu.tscn" id="4_jjvhh"]
 
 [node name="Main" type="Node2D" unique_id=1238014613]
 script = ExtResource("1_bo1nx")
@@ -17,3 +18,5 @@ position = Vector2(247, 235)
 
 [node name="EventNode2" parent="." unique_id=2103618726 instance=ExtResource("2_8gbba")]
 position = Vector2(543, 251)
+
+[node name="StatsMenu" parent="." unique_id=1635253876 instance=ExtResource("4_jjvhh")]
